@@ -1,3 +1,11 @@
-require "test/unit"
+require_relative "../lib/boot"
 
-$:.unshift File.expand_path("../..", __FILE__)
+# Load ActiveSupport testing stuff
+require 'active_support'
+require 'active_support/testing/autorun'
+require 'active_support/test_case'
+
+# Remove warning from ActiveSupport
+I18n.enforce_available_locales = true
+
+ActiveSupport.test_order = :random
