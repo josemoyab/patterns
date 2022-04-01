@@ -1,9 +1,5 @@
-class HomeController < Controller
+class HomeController < ApplicationController
   def index
-    response.write "Hello from Home controller"
-  end
-  
-  def nice
-    response.write "Hi, this is nice!"
+    response.write "Hello from home controller"
   end
 end

@@ -1,5 +1,2 @@
-class ApplicationController < Controller
-  def index
-    response.write "You said: " + request["text"]
-  end
+class ApplicationController < ActionController::Base
 end
